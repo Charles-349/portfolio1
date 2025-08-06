@@ -1,76 +1,98 @@
+
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import hospitalIMG from '../assets/images/Screenshot from 2025-08-06 19-51-36.png';
+import carIMG from '../assets/images/Screenshot from 2025-08-06 20-20-55.png';
+import attachmentIMG from '../assets/images/Screenshot from 2025-08-06 20-36-49.png';
 
 const projects = [
   {
-    title: "Appointment Booking System",
-    description: "Full-stack booking platform with authentication, payments, and admin dashboard.",
-    tech: ["React", "Node.js", "TypeScript", "PostgreSQL", "Drizzle ORM"],
-    github: "https://github.com/Charles-349/appointment-system",
-    live: "",
+    title: "Medical Appointment System",
+    description:
+      "A full-stack app for booking appointments, managing doctors, and handling payments. Includes admin, doctor and patient dashboards.",
+    image: hospitalIMG,
+    tech: ["React", "Express.js", "TypeScript", "Tailwind CSS","DrizzleORM","Redux", "PostgreSQL"],
+    demoLink: "https://hospital-management-system-pz93.vercel.app/",
+    githubLink: "https://github.com/Charles-349/hospital-management-system",
   },
-  {
-    title: "Butchery ERP",
-    description: "Inventory and sales management for butcheries, with reporting and expense tracking.",
-    tech: ["React", "Node.js", "PostgreSQL", "Redux Toolkit"],
-    github: "https://github.com/Charles-349/butchery-erp",
-    live: "",
-  },
-  {
-    title: "Hospital Frontend",
-    description: "Beautiful responsive frontend with animated hero and appointment form.",
-    tech: ["React", "Tailwind", "DaisyUI"],
-    github: "https://github.com/Charles-349/HospitalFrontend",
-    live: "",
-  },
+ {
+  title: "Car Rental Management System",
+  description:
+    "A full-stack web application for managing car rentals with features for vehicle listings, customer bookings, payment handling, and admin oversight. Includes separate dashboards for admins and customers, built with TypeScript, Drizzle ORM, and Redux for robust state management.",
+  image: carIMG,
+  tech: ["React", "Express.js", "TypeScript", "Tailwind CSS", "DrizzleORM", "Redux", "PostgreSQL"],
+  demoLink: "https://car-frontend-umber.vercel.app/",
+  githubLink: "https://github.com/Charles-349/car-frontend",
+},
+ {
+  title: "Student Attachment System",
+  description:
+    "A web-based system developed using PHP and HTML to streamline the student industrial attachment process. It allows students to apply for attachments, supervisors to track progress, and administrators to manage company placements and evaluations efficiently.",
+  image: attachmentIMG,
+  tech: ["PHP", "HTML", "MySQL", "CSS"],
+//   demoLink: "https://attachment-system.onrender.com",
+  githubLink: "https://github.com/Charles-349/Attachment_system",
+}
+
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 px-6 md:px-16 bg-gray-100 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="min-h-screen px-6 py-16 bg-base-100 text-base-content">
+      <div className="max-w-7xl mx-auto">
         <motion.h2
-          className="text-4xl font-bold mb-4 text-blue-700 dark:text-blue-400"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          className="text-4xl font-bold text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
           My Projects
         </motion.h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-10">
-          Real-world projects that show my skills and growth as a developer.
-        </p>
 
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition"
+              className="bg-base-200 text-base-content rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <h3 className="text-2xl font-semibold mb-2 text-blue-600">{project.title}</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tech.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 text-sm px-2 py-1 rounded"
+              <img
+                src={project.image}
+                alt={project.title}
+                className="h-48 w-full object-cover"
+              />
+              <div className="p-5 space-y-3">
+                <h3 className="text-xl font-semibold">{project.title}</h3>
+                <p className="text-sm">{project.description}</p>
+                <div className="flex flex-wrap gap-2 text-sm">
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-base-300 text-base-content px-2 py-1 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="pt-3 flex gap-3">
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary btn-sm"
                   >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex gap-4 text-blue-600 text-xl">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <FaGithub />
-                </a>
-                {project.live && (
-                  <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                    <FaExternalLinkAlt />
+                    Live Demo
                   </a>
-                )}
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    GitHub
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}
