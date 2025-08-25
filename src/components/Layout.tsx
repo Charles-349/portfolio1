@@ -1,6 +1,7 @@
-// src/components/Layout.tsx
+
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = () => {
   return (
@@ -9,6 +10,7 @@ const Layout = () => {
       <main className="pt-20 px-4 sm:px-8 md:px-16 lg:px-24">
         <Outlet />
       </main>
+      <Footer/>
     </div>
   );
 };
