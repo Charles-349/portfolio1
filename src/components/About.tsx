@@ -50,7 +50,7 @@ const About = () => {
           I'm <span className="font-semibold">certified in Cyber Security, Quality Assurance, and Quality Engineering</span>. 
           I take pride in being detail-oriented, eager to learn new technologies, and dedicated to solving problems efficiently.
         </p>
-
+         {/*buttons */}
         <div className="pt-8 space-x-4">
           <a
             href="/CharlesDavid Wachira2.pdf"
