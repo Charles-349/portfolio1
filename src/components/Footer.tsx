@@ -134,13 +134,13 @@ const Footer = () => {
           <ul className="mt-4 space-y-3 text-sm">
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-gray-400" />  
-              <a href="mailto:wamahiucharles123@gmail.com" className="hover:text-white transition">
+              <a href="mailto:wamahiucharles123@gmail.com" className="hover:text-amber-200 transition text-green-400">
                 wamahiucharles123@gmail.com
               </a>
             </li>
             <li className="flex items-center gap-3">
               <FaPhone className="text-gray-400" />  
-              <a href="tel:+254 701656349" className="hover:text-white transition">
+              <a href="tel:+254 701656349" className="hover:text-amber-200 transition text-green-400">
                 +254 701656349
               </a>
             </li>
