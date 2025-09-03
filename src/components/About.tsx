@@ -9,7 +9,7 @@ const About = () => {
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg mb-8 md:mb-0 md:mr-12 border-4 border-primary"
+        className="w-98 h-98 md:w-64 md:h-100 overflow-hidden shadow-lg mb-8 md:mb-0 md:mr-12 "
       >
         <img
           src={profilePic}
