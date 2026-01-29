@@ -3,8 +3,30 @@ import { motion } from "framer-motion";
 import hospitalIMG from '../assets/images/Screenshot from 2025-08-06 19-51-36.png';
 import carIMG from '../assets/images/Screenshot from 2025-08-06 20-20-55.png';
 import attachmentIMG from '../assets/images/Screenshot from 2025-08-06 20-36-49.png';
+import eccomerceIMG from '../assets/images/Screenshot from 2026-01-29 08-30-53.png';
+import hrmsIMG from '../assets/images/Screenshot from 2026-01-29 08-28-52.png';
 
 const projects = [
+    {
+    title: "Eccommerce Platform",
+    description:
+      "A full-stack multi-vendor eccomerce platform with user authentication, product management, shopping cart, and order processing features.",
+    image: eccomerceIMG,
+    tech: ["Next.js", "Express.js", "TypeScript", "Tailwind CSS","DrizzleORM","PostgreSQL"],
+    demoLink: "https://soko-timam.vercel.app/",
+    githubLink: "https://github.com/Charles-349/Soko-Timam",
+  },
+
+   {
+    title: "HR LMS Platform",
+    description:
+      "A full-stack HR Leave Management System with user authentication, leave requests, approvals, and admin dashboard features.",
+    image: hrmsIMG,
+    tech: ["Next.js", "Express.js", "TypeScript", "Tailwind CSS","DrizzleORM", "PostgreSQL"],
+    demoLink: "https://hrms-v2-teal.vercel.app/",
+    githubLink: "https://github.com/Charles-349/mag_bcdhr",
+  }, 
+  
   {
     title: "Medical Appointment System",
     description:
@@ -14,6 +36,17 @@ const projects = [
     demoLink: "https://hospital-management-system-pz93.vercel.app/",
     githubLink: "https://github.com/Charles-349/hospital-management-system",
   },
+
+ {
+  title: "Student Attachment System",
+  description:
+    "A web-based system developed using PHP and HTML to streamline the student industrial attachment process. It allows students to apply for attachments, supervisors to track progress, and administrators to manage company placements and evaluations efficiently.",
+  image: attachmentIMG,
+  tech: ["PHP", "HTML", "MySQL", "CSS"],
+//   demoLink: "https://attachment-system.onrender.com",
+  githubLink: "https://github.com/Charles-349/Attachment_system",
+},
+
  {
   title: "Car Rental Management System",
   description:
@@ -23,15 +56,6 @@ const projects = [
   demoLink: "https://car-frontend-umber.vercel.app/",
   githubLink: "https://github.com/Charles-349/car-frontend",
 },
- {
-  title: "Student Attachment System",
-  description:
-    "A web-based system developed using PHP and HTML to streamline the student industrial attachment process. It allows students to apply for attachments, supervisors to track progress, and administrators to manage company placements and evaluations efficiently.",
-  image: attachmentIMG,
-  tech: ["PHP", "HTML", "MySQL", "CSS"],
-//   demoLink: "https://attachment-system.onrender.com",
-  githubLink: "https://github.com/Charles-349/Attachment_system",
-}
 
 ];
 
