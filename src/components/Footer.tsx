@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const socialLinks = [
   { icon: <FaGithub />, href: "https://github.com/Charles-349" },
-  { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/charles-wamahiu/" },
+  { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/charles-wamahiu-1a6b06389/" },
   { icon: <FaTwitter />, href: "https://x.com/Ch84036/" },
 ];
 
