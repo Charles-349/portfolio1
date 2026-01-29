@@ -20,7 +20,7 @@ const projects = [
    {
     title: "HR LMS Platform",
     description:
-      "A full-stack HR Leave Management System with user authentication, leave requests, approvals, and admin dashboard features.",
+      "A full-stack SaaS HR Leave Management System with RBAC, user authentication, leave requests, approvals, and admin dashboard features.",
     image: hrmsIMG,
     tech: ["Next.js", "Express.js", "TypeScript", "Tailwind CSS","DrizzleORM", "PostgreSQL"],
     demoLink: "https://hrms-v2-teal.vercel.app/",
