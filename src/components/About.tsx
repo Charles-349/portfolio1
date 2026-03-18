@@ -58,7 +58,7 @@ const About = () => {
         </p>
         <div className="pt-8 space-x-4">
           <a
-            href="/Charles Wamahiu CV (3).pdf"
+            href="/Charles Wamahiu CV (5).pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary shadow-md"
