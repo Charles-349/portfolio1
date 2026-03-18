@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profilePic from "../assets/images/pic.jpeg";
+import profilePic from "../assets/images/WhatsApp Image 2026-02-26 at 16.43.29.jpeg";
 
 const About = () => {
   return (
@@ -50,7 +50,12 @@ const About = () => {
           I'm <span className="font-semibold">certified in Cyber Security, Quality Assurance, and Quality Engineering</span>. 
           I take pride in being detail-oriented, eager to learn new technologies, and dedicated to solving problems efficiently.
         </p>
-        
+        <p className="text-lg leading-relaxed">
+          Additionally, I am an experienced
+        <span className="text-primary font-semibold"> IT Support Specialist</span> with strong skills in troubleshooting, system administration, and technical support, and a proven track record of delivering exceptional customer service and resolving complex technical issues efficiently. 
+        I have a solid background in providing technical support, managing IT infrastructure, and ensuring smooth operations for end-users. 
+        With a commitment to continuous learning and a proactive approach to problem-solving, I am dedicated to delivering high-quality IT solutions that meet the needs of both clients and organizations.
+        </p>
         <div className="pt-8 space-x-4">
           <a
             href="/Charles Wamahiu CV (3).pdf"
