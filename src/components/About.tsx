@@ -52,7 +52,7 @@ const About = () => {
         </p>
 
         <p className="text-lg leading-relaxed">
-          My dual expertise in QA and development allows me to approach projects holistically—writing reliable code while ensuring it meets the highest quality standards from the ground up.
+          My dual expertise in QA and development allows me to approach projects holistically by writing reliable code while ensuring it meets the highest quality standards from the ground up.
         </p>
 
         <p className="text-lg leading-relaxed">
