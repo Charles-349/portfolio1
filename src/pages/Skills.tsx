@@ -19,11 +19,24 @@ import {
   SiFlask,
   SiRender,
   SiVercel,
-  
+  SiJest,
+  SiCypress,
+  SiK6,
+  SiPostman
 } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 import { Typewriter } from "react-simple-typewriter";
 
 const skills = [
+  {
+    category: "QA/QE",
+    items: [
+      { name: "Jest", icon: <SiJest className="text-primary" /> },
+      { name: "Cypress", icon: <SiCypress className="text-secondary" /> },
+      { name: "k6", icon: <SiK6 className="text-accent" /> },
+      { name: "API Testing", icon: <SiPostman className="text-base-content" /> },
+    ],
+  },
   {
     category: "Frontend",
     items: [
@@ -60,8 +73,7 @@ const skills = [
       { name: "Git & GitHub", icon: <SiGit className="text-secondary" /> },
       { name: "Render", icon: <SiRender className="text-accent" /> },
       { name: "Vercel", icon: <SiVercel className="text-base-content" /> },
-      
-    
+      { name: "Azure", icon: <VscAzure className="text-primary" /> },
     ],
   },
 ];
@@ -69,7 +81,7 @@ const Skills = () => {
   return (
     <section className="min-h-screen px-6 py-16 bg-base-100 text-base-content transition-all duration-300">
       <div className="max-w-7xl mx-auto text-center">
-      
+
         <motion.h2
           className="text-4xl sm:text-5xl font-bold mb-8"
           initial={{ opacity: 0, y: -30 }}
@@ -96,7 +108,7 @@ const Skills = () => {
           ideas to life:
         </p>
 
-      
+
         <div className="space-y-12">
           {skills.map((group, idx) => (
             <motion.div
